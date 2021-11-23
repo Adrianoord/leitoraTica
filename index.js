@@ -26,7 +26,7 @@ function writeCommand(command) {
 function startReading() {
     reading = setInterval(() => {
         console.log("LENDO")
-        port.write(Buffer.from(commands.READ_BYTES));
+        port.write(Buffer.from(commands.READ_DATA));
     }, 10);
 }
 
